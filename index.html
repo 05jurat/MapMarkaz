@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Markaz</title>
+    <link rel="icon" href="./images/Logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js"></script>
+    <script src="./translate/translate.js"></script>
+</head>
+
+<body>
+    <div id="root">
+        <div class="page-wrapper1">
+            <div class="navbar">
+                <div class="navLeft">
+                    <div style="display: flex; align-items: center;">
+                        <img src="./images/Logo.svg" alt="" style="cursor: pointer;">
+                        <div class="navTitle">mapmarkaz.uz</div>
+                    </div>
+                    <div class="select">
+                        <select class="select1">
+                            <option class="trans" value="rus" id="ru">Русский</option>
+                            <option class="trans" value="uzb" id="uz">O'zbek</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="navRight">
+                    <ul>
+                        <li><a href="./index.html" key="basic" class="long">Главная</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="./abouts.html" key="weAbout" class="lang">О нас</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="./contact.html" key="contact" class="langss">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="sidebarNav">
+                    <img src="./images/menu-icon.svg" alt="">
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="mainhome">
+                    <div class="screen">
+                        <div class="screen-left">
+                            <div class="screen-title " key="category">Картографический центр</div>
+                            <div class="screen-text " key="center">Добро пожаловать в Картографический центр! В предприятие с
+                                достаточным опытом в производстве картографических материалов и полиграфической
+                                продукции</div>
+                            <div class="left-box-cards">
+                                <div class="box-card">
+                                    <p key="material" class="langr">Центр оказывает услуги по созданию картографических материалов и выпуску
+                                        полиграфической продукции.</p>
+                                    <button class="scroll"><a href="#" key="allServer" class="this">Все услуги</a></button>
+                                </div>
+                                <div class="box-card">
+                                    <img src="./images/jurnal.svg" alt="" width="100%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen-right">
+                            <div class="main">
+                                <div class="wrapper">
+                                    <img src="./images/earth-gif.gif" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flags-card">
+                        <div class="flags">
+                            <div class="flags-leftbox">
+                                <div key="useLink" class="silka">Полезные ссылки: </div>
+                                <div class="flags-leftbox-links">
+                                    <div>
+                                        <p>
+                                            <a href="https://mudofaa.uz/" target="_blanked">mudofaa.uz</a>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <a href="https://uzspace.uz/" target="_blanked">uzspace.uz</a>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <a href="https://kadastr.uz/" target="_blanked">kadastr.uz</a>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <a href="https://gisinfo.ru/" target="_blanked">gisinfo.ru</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flags-rightbox">
+                                <div key="siteVisitDay" class="den">Сайт посещали за день: 0 всего: 0</div>
+                                <!-- <div class="rightbox-mini-flag">
+                                    <noindex>
+                                        <a>
+                                            <img src="https://s01.flagcounter.com/count2/t9Wd/bg_FFFFFF/txt_000000/border_FFFFFF/columns_5/maxflags_12/viewers_3/labels_0/pageviews_0/flags_0/percent_0/"
+                                                alt="">
+                                        </a>
+                                    </noindex>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="weather-bottom-class">
+                            <div class="wea-bottom">
+                                <div class="wea-inputs">
+                                    <input class="selectMap" type="text" placeholder="Search...">
+                                    <section class="selectDay">
+                                        <div class="city">Toshkent, UZ</div>
+                                        <div class="data">Sa 7 Jan 2023</div>
+                                    </section>
+                                </div>
+                                <div class="tepms">
+                                    <div class="main-temp">
+                                        <p class="temp">4.97°</p>
+                                        <span class="teps">дымка</span>
+                                        <br>
+                                        <span class="clouds">2.4°, 70°</span>
+                                    </div>
+                                    <div class="tn-temp">
+                                        <p>19:00</p> <img src="https://openweathermap.org/img/w/50n.png" alt="">
+                                        <br><br>
+                                        <p class="tntemp">4.97°</p>
+                                    </div>
+                                    <div class="tn-temp">
+                                        <p>20:00</p><img src="https://openweathermap.org/img/w/50n.png" alt="">
+                                        <br><br>
+                                        <p>4.97°</p>
+                                    </div>
+                                    <div class="tn-temp">
+                                        <p>21:00</p><img src="https://openweathermap.org/img/w/50n.png" alt="">
+                                        <br><br>
+                                        <p>4.97°</p>
+                                    </div>
+                                    <div class="tn-temp">
+                                        <p>22:00</p>
+                                        <img src="https://openweathermap.org/img/w/50n.png" alt="">
+                                        <br><br>
+                                        <p>4.97°</p>
+                                    </div>
+                                    <div class="tn-temp">
+                                        <p>23:00</p>
+                                        <img src="https://openweathermap.org/img/w/50n.png" alt="">
+                                        <br><br>
+                                        <p>4.97°</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aboutUs">
+                        <div class="first-post">
+                            <div class="post-img">
+                                <img src="./images/rect1.svg" alt="">
+                            </div>
+                            <div class="post-text">
+                                <div class="title" key="weAbout">О нас</div>
+                                <p key="info" class="respublik">Картографический центр Министерства обороны Республики Узбекистан образован 23
+                                    декабря 1921 года как оборонное предприятие.</p>
+                                <p key="performs" class="matr">Картографический центр выполняет полиграфические работы и специальные задачи по
+                                    созданию картографических материалов различного назначения.</p>
+                            </div>
+                        </div>
+                        <div class="second-post">
+                            <div class="post-img">
+                                <img src="./images/rect2.svg" alt="">
+                            </div>
+                            <div class="post-text">
+                                <p key="history" class="history">История создания картографической службы на территории Республики Узбекистан берет
+                                    начало с 1866 года, когда по указанию Императорского двора России в Ташкенте был
+                                    создан военно-топографический отдел, при котором 28 октября 1867 года была
+                                    образована литография, где выпускались первые
+                                    в Центральной Азии топографические карты. </p>
+                                <p key=years class="newy">В период с 1918 по 1923 годы персоналом картографической части, были выполнены работы
+                                    по составлению двух-, десяти- и сорокаверстных карт Туркестана. Однако в 1919 году в
+                                    связи с тяжестью Гражданской войны работы были приостановлены, а все картографы
+                                    перешили к выполнению чертежных работ по заданию штаба Туркестанского фронта.</p>
+                            </div>
+                        </div>
+                        <div class="third-post">
+                            <div class="post-img">
+                                <img src="./images/rect3.svg" alt="">
+                            </div>
+                            <div class="post-text">
+                                <p key="card" class="kart">В 1920 году печатание карт, вследствие изъятия комиссариатом финансов для печатания
+                                    денежных знаков литографской скоропечатной машины и одного ручного станка,
+                                    производилось на одном оставшемся ручном станке. В 1921 году оборудование было
+                                    возвращено, но уже в конце года полиграфический отдел Совета народного хозяйства
+                                    изъял для своих нужд литографскую машину, которую возвратили только в 1923 году.</p>
+                                <button class="button"><a href="./abouts.html" key="more" class="sends">Подробнее</a><img
+                                        src="./images/Vector 1.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uslugi">
+                        <div class="wh-title" key="serves">Услуги</div>
+                        <div class="cards">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img  id="slide" src="http://backend.mapmarkaz.uz/media/uslugi1_km6oWup.png" alt="">
+                                <div class="btnLefts">
+                                <button id="btnLeft"><img class="vec" src="./images/Vector.png" alt=""></button>
+                                <button id="btnRight"><img class="vec1" src="./images/Vectora.png" alt=""></button>
+                                </div>
+                                </div>
+                                <div class="card-text">
+                                    <span key="various" class="wetr">Картографические материалы различного назначения</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="http://backend.mapmarkaz.uz/media/uslugi2_MVKvBBj.png" alt="">
+                                </div>
+                                <div class="card-text2"><span class="text2 " key="model">Цифровые трехмерные модели местности и объектов</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="http://backend.mapmarkaz.uz/media/uslugi3_NdCV9dX.png" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <span key="journal" class="tixa">Книжно-бланочная и журнальная продукция</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="http://backend.mapmarkaz.uz/media/uslugi4_3mK4uVC.png" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <span key="logos" class="plakat">Плакаты, этикетки и буклеты</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="http://backend.mapmarkaz.uz/media/uslugi5_3Tog4TM.png" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <span key="production" class="cars">Производственные мощности</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="finance">
+                        <div class="titler" key="financial">Финансово-экономическая отчетность нашего предприятия</div>
+                        <div class="pages">
+                            <div class="pages-top">
+                                <div class="select-wrapper">
+                                    <p for="slct" key="curYear" class="curYs">Год</p>
+                                    <select id="slct">
+                                        <option>2023</option>
+                                        <option>2022</option>
+                                        <option>2021</option>
+                                        <option>2020</option>
+                                        <option>2019</option>
+                                        <option>2018</option>
+                                    </select>
+                                </div>
+                                <div class="pages-btn">
+                                    <div class="btn-div">
+                                        <p>Квартал</p>
+                                        <button>1</button>
+                                    </div>
+                                    <div class="btn-div">
+                                        <p>Квартал</p>
+                                        <button>2</button>
+                                    </div>
+                                    <div class="btn-div">
+                                        <p>Квартал</p>
+                                        <button>3</button>
+                                    </div>
+                                    <div class="btn-div">
+                                        <p>Квартал</p>
+                                        <button>4</button>
+                                    </div>
+                                </div>
+                                <div class="search-btn">
+                                    <button>
+                                        <span key="search" class="poisk">Поиск</span>
+                                        <img src="./images/searchBtn.svg" alt=""> </button>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="pages-bottom">
+                                <p key="file" class="pdf">Названиефайла.pdf</p>
+                                <button class="btn-down" onclick="Pdf()" key="download" > Скачать PDF <img src="./images/down.svg"
+                                        alt="">
+                                </button>
+                                <button class="btn-see " key="view"> Посмотреть <img src="/images/eyeBtn.svg" alt=""> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ads">
+                        <div class="titled" key="ads">ОБЪЯВЛЕНИЯ</div>
+                        <div class="ads-card">
+                            <div class="card-top">
+                                <p key="tenders" class="star">Тендеры</p><img src="./images/up.svg" alt="">
+                            </div>
+                            <div class="card-bottom">
+                                <a target="_blanked" class="card-btn-down" onclick="Pdf()" key="download">Скачать PDF <img
+                                        src="./images/down.svg" alt=""> </a>
+                                <a target="_blanked" class="card-btn-see" key="view">Посмотреть <img src="./images/eyeBtn.svg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ads-card">
+                            <div class="card-top">
+                                <p key="save" class="zashta">Социальная зашита</p><img src="./images/up.svg" alt="">
+                            </div>
+                            <div class="card-bottom">
+                                <a target="_blanked" class="card-btn-downn" onclick="Pdf()" key="download">Скачать PDF <img
+                                        src="/images/down.svg" alt="">
+                                </a>
+                                <a target="_blanked" class="card-btn-seee" key="view">Посмотреть <img src="/images/eyeBtn.svg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ads-card">
+                            <div class="card-top">
+                                <p key="jobs" class="nom">Вакансии </p>
+                                <img src="/images/up.svg" alt="">
+                            </div>
+                            <div class="card-bottom">
+                                <a target="_blanked" class="card-btn-downr" onclick="Pdf()" key="download">Скачать PDF<img
+                                        src="/images/down.svg" alt="">
+                                </a>
+                                <a target="_blanked" class="card-btn-seer" key="view">Посмотреть <img src="/images/eyeBtn.svg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="card">
+                    <h3><img src="/images/Logo.svg" alt="" width="34"><span>mapmarkaz.uz</span></h3>
+                    <p key="printed" class="printd">Картографический центр! Производство картографических материалов
+                        и полиграфической продукции</p>
+                </div>
+                <div class="card">
+                    <h3 key="contact " class="h3">Контакты</h3>
+                    <p>
+                        <img src="/images/phone_icon.svg" alt=""> <span key="duty" class="duty">Дежурный:</span> +998 71 233-17-37
+                    </p>
+                    <p> <img src="/images/phone_icon.svg" alt=""> <span key="accounting" class="accounting">Бухгалтерия:</span> +998 71 233-43-44 </p>
+                    <p> <img src="/images/phone_icon.svg" alt=""> <span key="telegram" class="telegram">Телеграмм:</span> +998 99 353-49-22 </p>
+                    <p> <img src="/images/Email.svg" alt=""> mapmarkaz@umail.uz </p>
+                    <p class="road"> <img src="/images/location.svg" alt="" key="road"> 100060, г. Ташкент, Мирабадский район, ул. Яхъё
+                        Гуломова, 93. </p>
+                </div>
+                <div class="card">
+                    <h3 key="requisites" class="requisites">Реквизиты</h3>
+                    <p> <span key="bank" class="bank">Банк:</span> <span key="filia" class="filia">Ташкентский филиал отделения Ипотека-банк АТИБ</span></p>
+                    <p> <span key="t/c">Р/С:</span> 20203000000447954002 </p>
+                    <p> <span key="TIN">ИНН:</span> 201052239 </p>
+                    <p> <span key="OKONX">ОКОНХ :</span> 19400 </p>
+                    <p> ОКЕД : 18120 </p>
+                    <h3 class="copy" style="cursor: pointer;" key="copy">Скопировать<span class="copied">скопировано</span></h3>
+                </div>
+                <div class="bottom">
+                    <p style="float: left;">Copyright © 2023 mapmarkaz</p>
+                    <button class="myBtn">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAALCAYAAACd1bY6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABXSURBVHgBpZLLDQAgCEMZxVEczU0dpWrwYIzIrwnhUl4ogUgRgDKrrU4ZbVAHq4eBFwhh4GOjGtpQiuaOrA2YgVaj6vNGEP3uW/yA4Id0gQRgS3/4OT8AQUM6GDKm1KYAAAAASUVORK5CYII="
+                            alt="">
+                    </button>
+                    <img src="/images/Footer Left.svg " alt="" style="float: right; width: 100px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
